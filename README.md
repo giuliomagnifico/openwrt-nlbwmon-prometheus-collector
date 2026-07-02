@@ -4,7 +4,7 @@ A lightweight Prometheus collector for OpenWrt that exports `nlbwmon` traffic ac
 
 It exposes per-host traffic metrics with labels for IP address, MAC address, hostname, protocol, port and Layer 7 protocol.
 
-<img width="2952" height="530" alt="Safari 02-07-2026 at 16 22 38" src="https://github.com/user-attachments/assets/42a6e3dc-8f54-4244-bcfb-913db0c423b2" />
+<img width="2940" height="534" alt="Safari 02-07-2026 at 16 35 44 2" src="https://github.com/user-attachments/assets/5ff10e8c-72f3-471c-bf7c-6859efa8bf88" />
 
 
 ## Metrics
