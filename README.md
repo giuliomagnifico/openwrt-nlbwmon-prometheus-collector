@@ -12,13 +12,9 @@ It exposes per-host traffic metrics with labels for IP address, MAC address, hos
 The collector exports:
 
 ```text
-
 nlbwmon_rx_bytes
-
 nlbwmon_tx_bytes
-
 nlbwmon_connections
-
 ```
 
 Labels:
