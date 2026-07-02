@@ -57,7 +57,7 @@ You should see output similar to:
 # TYPE nlbwmon_rx_bytes gauge
 # TYPE nlbwmon_tx_bytes gauge
 # TYPE nlbwmon_connections gauge
-nlbwmon_rx_bytes{hostname="example-host",ip="192.168.1.100",mac="aa:bb:cc:dd:ee:ff",proto="TCP",family="4",layer7="HTTPS",port="443"} 123456789
+nlbwmon_connections{mac="a8:5b:78:07:d0:5a",proto="UDP",hostname="iPad-bagno",family="4",layer7="mDNS",port="5353",ip="192.168.50.194"} 139
 ```
 
 ## Prometheus scrape config
