@@ -1,41 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_MIMIR",
-      "label": "mimir",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "prometheus",
-      "pluginName": "Prometheus"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "12.4.4"
-    },
-    {
-      "type": "panel",
-      "id": "piechart",
-      "name": "Pie chart",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "prometheus",
-      "name": "Prometheus",
-      "version": "1.0.0"
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -61,7 +24,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -116,7 +79,7 @@
               }
             ]
           },
-          "unit": "bytes"
+          "unit": "binbps"
         },
         "overrides": []
       },
@@ -151,11 +114,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n  rate(nlbwmon_rx_bytes{hostname=~\".+\"}[$__rate_interval])\n  +\n  rate(nlbwmon_tx_bytes{hostname=~\".+\"}[$__rate_interval])\n) * 8)",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "1h",
@@ -165,7 +124,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -220,7 +179,7 @@
               }
             ]
           },
-          "unit": "bytes"
+          "unit": "binbps"
         },
         "overrides": []
       },
@@ -255,11 +214,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n  rate(nlbwmon_rx_bytes{hostname=~\".+\"}[$__rate_interval])\n) * 8)",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "1h",
@@ -269,7 +224,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -328,11 +283,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_rx_bytes{hostname=~\".+\"}[$__range])\n  +\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "24h",
@@ -342,7 +293,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -401,11 +352,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "24h",
@@ -415,7 +362,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -474,11 +421,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_rx_bytes{hostname=~\".+\"}[$__range])\n  +\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "7d",
@@ -488,7 +431,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -547,11 +490,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "7d",
@@ -561,7 +500,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -620,11 +559,7 @@
           "expr": "topk(20, sum by(hostname, ip) (\n\n  nlbwmon_rx_bytes{hostname=~\".+\"}\n\n  +\n\n  nlbwmon_tx_bytes{hostname=~\".+\"}\n\n))",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "now/M",
@@ -634,7 +569,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_MIMIR}"
+        "uid": "adfcnvn9xnri8e"
       },
       "fieldConfig": {
         "defaults": {
@@ -693,11 +628,7 @@
           "expr": "topk(20, sum by(layer7) (\n  increase(nlbwmon_rx_bytes{hostname=~\".+\"}[$__range])\n  +\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
           "legendFormat": "{{hostname}}",
           "range": true,
-          "refId": "A",
-          "datasource": {
-            "type": "prometheus",
-            "uid": "${DS_MIMIR}"
-          }
+          "refId": "A"
         }
       ],
       "timeFrom": "now/M",
@@ -719,6 +650,6 @@
   "timezone": "browser",
   "title": "Network Data",
   "uid": "ad88ds2",
-  "version": 4,
+  "version": 6,
   "weekStart": ""
 }
