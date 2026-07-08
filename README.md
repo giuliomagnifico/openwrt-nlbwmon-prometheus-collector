@@ -1,10 +1,10 @@
 # OpenWrt nlbwmon Prometheus collector
 
-Prometheus collector for OpenWrt that exports `nlbwmon` traffic data using the `prometheus-node-exporter-lua`.
+Prometheus collector for OpenWrt that exports `nlbwmon` traffic data using the `prometheus-node-exporter-lua`. It exposes per-host traffic metrics with labels for IP address, MAC, hostname, protocol, port and Layer 7 protocol.
 
-It exposes per-host traffic metrics with labels for IP address, MAC, hostname, protocol, port and Layer 7 protocol.
+## Example of a Dashboard 
 
-<img width="2474" height="2126" alt="Safari 08-07-2026 at 06 08 03" src="https://github.com/user-attachments/assets/64a976fa-bd1d-4314-a969-97f6bc83edf5" />
+<img width="2440" height="2132" alt="Safari 08-07-2026 at 06 18 35" src="https://github.com/user-attachments/assets/08311270-cae7-4c94-872b-1cb4fa8529c6" />
 
 
 ## Metrics
