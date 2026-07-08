@@ -182,7 +182,7 @@ Relative time: 7d   → $__range = 7d
 
 `Time shift` should usually be left empty unless you explicitly want to compare with a previous period.
 
-`nlbwmon` resets its accounting period according to its OpenWrt configuration. For example, if `nlbwmon` is configured to restart every first day of the month, the cumulative metrics also reset monthly.
+`nlbwmon` resets its accounting period according to its OpenWrt configuration. For example, if `nlbwmon` is configured to restart every first day of the month, the cumulative metrics also reset monthly. Check the `nlbwmon` config via UI or UCI:
 
 ```
 root@R5S:~# uci show nlbwmon
