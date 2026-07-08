@@ -4,7 +4,7 @@ Prometheus collector for OpenWrt that exports `nlbwmon` traffic data using the `
 
 ## Dashboard 
 
-<img width="2444" height="2148" alt="Safari 08-07-2026 at 06 24 20" src="https://github.com/user-attachments/assets/18f60174-7d69-456b-9fac-1495aec5276c" />
+<img width="2962" height="2096" alt="Safari 08-07-2026 at 15 46 46" src="https://github.com/user-attachments/assets/d1b2bd6e-5bd9-4add-a742-915b1db34061" />
 
 ## Metrics
 
