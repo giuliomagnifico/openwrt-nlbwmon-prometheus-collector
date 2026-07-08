@@ -6,7 +6,7 @@ Prometheus collector for OpenWrt that exports `nlbwmon` traffic data using the `
 
 <img width="3504" height="2650" alt="Network Data-1783518515069" src="https://github.com/user-attachments/assets/52d6e083-e49e-4e20-94a8-fdcef549f4f6" />
 
-You can find this dashboard example code here in this repo: https://github.com/giuliomagnifico/openwrt-nlbwmon-prometheus-collector/blob/main/Grafana%20dashboard%20example.json
+You can find this dashboard example code [here](https://github.com/giuliomagnifico/openwrt-nlbwmon-prometheus-collector/blob/main/Grafana%20dashboard%20example.json) in this repo.
 
 ## Metrics
 
