@@ -197,3 +197,8 @@ nlbwmon.@nlbwmon[0].database_limit='0'
 nlbwmon.@nlbwmon[0].database_directory='/mnt/sda1/nlbwmon'
 nlbwmon.@nlbwmon[0].local_network='192.168.0.0/16' '172.16.0.0/12' '10.0.0.0/8' '192.168.1.1/24' '192.168.2.1/24' '10.4.0.1/32' '192.168.50.1/24' '192.168.20.1/24' 'iot' 'wan' 'wg0'
 ```
+
+> [!NOTE]
+> If a device still appears as an IP address, it usually means OpenWrt does not have a name for it in static DHCP or in the active DHCP leases.
+> 
+> In that case, adding a static DHCP lease in OpenWrt is usually enough.
