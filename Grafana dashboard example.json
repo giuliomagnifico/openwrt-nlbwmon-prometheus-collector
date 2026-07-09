@@ -332,7 +332,7 @@
             "mode": "thresholds"
           },
           "custom": {
-            "align": "auto",
+            "align": "center",
             "cellOptions": {
               "type": "auto"
             },
@@ -381,7 +381,7 @@
       "id": 11,
       "interval": "1d",
       "options": {
-        "cellHeight": "sm",
+        "cellHeight": "md",
         "showHeader": false
       },
       "pluginVersion": "12.4.4",
@@ -841,6 +841,6 @@
   "timezone": "browser",
   "title": "Network Data",
   "uid": "ad88ds2",
-  "version": 11,
+  "version": 12,
   "weekStart": ""
 }
