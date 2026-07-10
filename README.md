@@ -1,8 +1,8 @@
 # OpenWrt nlbwmon Prometheus collector
 
-Post blog with more details: [Per-device traffic monitoring for OpenWrt in Grafana | etcetera](https://giuliomagnifico.blog/post/2026-07-07-monitor-openwrt-lan-traffic/)
-
 Prometheus collector for OpenWrt that exports `nlbwmon` traffic data using the `prometheus-node-exporter-lua`. It exposes per-host traffic metrics with labels for IP address, MAC, hostname, protocol, port and Layer 7 protocol.
+
+Post blog with more details: [Per-device traffic monitoring for OpenWrt in Grafana | etcetera](https://giuliomagnifico.blog/post/2026-07-07-monitor-openwrt-lan-traffic/)
 
 ## Dashboard 
 
