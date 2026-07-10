@@ -32,11 +32,9 @@ layer7
 
 Hostnames are resolved from:
 
-- OpenWrt static DHCP host entries from `uci show dhcp`
-
-- `/tmp/dhcp.leases`
-
-- The IP address as fallback
+- OpenWrt static DHCP host entries from `uci show dhcp`, matched by IP address or MAC address
+- Active DHCP leases from `/tmp/dhcp.leases`, matched by IP address or MAC address
+- The IP address itself as fallback
 
 ## Installation
 
