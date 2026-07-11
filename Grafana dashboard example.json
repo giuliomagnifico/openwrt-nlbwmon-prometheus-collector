@@ -471,9 +471,11 @@
       "targets": [
         {
           "editorMode": "code",
+          "exemplar": false,
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_rx_bytes{hostname=~\".+\"}[$__range])\n  +\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
+          "instant": true,
           "legendFormat": "{{hostname}}",
-          "range": true,
+          "range": false,
           "refId": "A"
         }
       ],
@@ -540,9 +542,11 @@
       "targets": [
         {
           "editorMode": "code",
+          "exemplar": false,
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
+          "instant": true,
           "legendFormat": "{{hostname}}",
-          "range": true,
+          "range": false,
           "refId": "A"
         }
       ],
@@ -609,9 +613,11 @@
       "targets": [
         {
           "editorMode": "code",
+          "exemplar": false,
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_rx_bytes{hostname=~\".+\"}[$__range])\n  +\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
+          "instant": true,
           "legendFormat": "{{hostname}}",
-          "range": true,
+          "range": false,
           "refId": "A"
         }
       ],
@@ -678,9 +684,11 @@
       "targets": [
         {
           "editorMode": "code",
+          "exemplar": false,
           "expr": "topk(20, sum by(hostname, ip) (\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
+          "instant": true,
           "legendFormat": "{{hostname}}",
-          "range": true,
+          "range": false,
           "refId": "A"
         }
       ],
@@ -747,9 +755,11 @@
       "targets": [
         {
           "editorMode": "code",
+          "exemplar": false,
           "expr": "topk(20, sum by(hostname, ip) (\n\n  nlbwmon_rx_bytes{hostname=~\".+\"}\n\n  +\n\n  nlbwmon_tx_bytes{hostname=~\".+\"}\n\n))",
+          "instant": true,
           "legendFormat": "{{hostname}}",
-          "range": true,
+          "range": false,
           "refId": "A"
         }
       ],
@@ -816,9 +826,11 @@
       "targets": [
         {
           "editorMode": "code",
+          "exemplar": false,
           "expr": "topk(20, sum by(layer7) (\n  increase(nlbwmon_rx_bytes{hostname=~\".+\"}[$__range])\n  +\n  increase(nlbwmon_tx_bytes{hostname=~\".+\"}[$__range])\n))",
+          "instant": true,
           "legendFormat": "{{hostname}}",
-          "range": true,
+          "range": false,
           "refId": "A"
         }
       ],
@@ -841,6 +853,6 @@
   "timezone": "browser",
   "title": "Network Data",
   "uid": "ad88ds2",
-  "version": 12,
+  "version": 14,
   "weekStart": ""
 }
